@@ -57,33 +57,33 @@ export default function Home() {
           <h1 className='font-semibold text-3xl mt-10'> Good Afternoon</h1>
 
           <div className='grid grid-cols-3 gap-4 mt-4'>
-            <div className='bg-white/10 rounded flex items-center gap-4 overflow-hidden'>
-              <Image src="/fearofthedark.jpg" width={120} height={120} alt='Capa do Album Fear Of The Dark da Banda Iron Maiden' />
+            <a href='#' className='bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors'>
+              <Image src="/fearofthedark.jpg" width={104} height={104} alt='Capa do Album Fear Of The Dark da Banda Iron Maiden' />
 
               <strong>Fear Of The Dark</strong>
-            </div>
-            <div className='bg-white/10 rounded flex items-center gap-4 overflow-hidden'>
-              <Image src="/meteora.jpg" width={120} height={120} alt='Capa do Album Meteora da banda Linkin Park' />
+            </a>
+            <a href='#' className='bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors'>
+              <Image src="/meteora.jpg" width={104} height={104} alt='Capa do Album Meteora da banda Linkin Park' />
               <strong>Meteora</strong>
-            </div>
-            <div className='bg-white/10 rounded flex items-center gap-4 overflow-hidden'>
-              <Image src="/hybridtheory.jpg" width={120} height={120} alt='Capa do Album Hybrid Theory da Banda Linkin Park' />
+            </a>
+            <a href='#' className='bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors'>
+              <Image src="/hybridtheory.jpg" width={104} height={104} alt='Capa do Album Hybrid Theory da Banda Linkin Park' />
 
               <strong>Hybrid Theory</strong>
-            </div>
-            <div className='bg-white/10 rounded flex items-center gap-4 overflow-hidden'>
-              <Image src="/masterofpuppets.jpg" width={120} height={120} alt='Capa do Album Master Of Puppets da Banda Metallica' />
+            </a>
+            <a href='#' className='bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors'>
+              <Image src="/masterofpuppets.jpg" width={104} height={104} alt='Capa do Album Master Of Puppets da Banda Metallica' />
               <strong>Master Of Puppets</strong>
-            </div>
-            <div className='bg-white/10 rounded flex items-center gap-4 overflow-hidden'>
-              <Image src="/waristheanswer.jpg" width={120} height={120} alt='Capa do Album War is The Answer da Banda Five Finger Death Punch' />
+            </a>
+            <a href='#' className='bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors'>
+              <Image src="/waristheanswer.jpg" width={104} height={104} alt='Capa do Album War is The Answer da Banda Five Finger Death Punch' />
               <strong>War is The Anwser</strong>
-            </div>
-            <div className='bg-white/10 rounded flex items-center gap-4 overflow-hidden'>
-              <Image src="/askingalexandria.jpg" width={120} height={120} alt='Capa do Album Asking Alexandria da Banda Asking Alexandria' />
+            </a>
+            <a href='#' className='bg-white/10 rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors'>
+              <Image src="/askingalexandria.jpg" width={104} height={104} alt='Capa do Album Asking Alexandria da Banda Asking Alexandria' />
 
               <strong>Asking Alexandria</strong>
-            </div>
+            </a>
 
           </div>
 
