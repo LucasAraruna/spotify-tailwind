@@ -1,4 +1,4 @@
-import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play } from 'lucide-react'
+import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Home() {
@@ -112,10 +112,88 @@ export default function Home() {
           </div>
 
           <h2 className='font-semibold text-2xl mt-10'>Made for Lukirito</h2>
+
+          <div className='grid grid-cols-8 gap-4 mt-4'>
+            <a href='#' className='bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10'>
+
+              <Image src="/fearofthedark.jpg" className='w-full' width={104} height={104} alt='Capa do Album Fear Of The Dark da Banda Iron Maiden' />
+
+              <strong className='font-semibold'>Daily Mix 1</strong>
+
+              <span className='text-sm text-zinc-400'>Wallows, COIN, girl in red and more</span>
+
+            </a>
+
+            <a href='#' className='bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10'>
+
+              <Image src="/fearofthedark.jpg" className='w-full' width={104} height={104} alt='Capa do Album Fear Of The Dark da Banda Iron Maiden' />
+
+              <strong className='font-semibold'>Daily Mix 1</strong>
+
+              <span className='text-sm text-zinc-400'>Wallows, COIN, girl in red and more</span>
+
+            </a>
+
+            <a href='#' className='bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10'>
+
+              <Image src="/fearofthedark.jpg" className='w-full' width={104} height={104} alt='Capa do Album Fear Of The Dark da Banda Iron Maiden' />
+
+              <strong className='font-semibold'>Daily Mix 1</strong>
+
+              <span className='text-sm text-zinc-400'>Wallows, COIN, girl in red and more</span>
+
+            </a>
+
+            <a href='#' className='bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10'>
+
+              <Image src="/fearofthedark.jpg" className='w-full' width={104} height={104} alt='Capa do Album Fear Of The Dark da Banda Iron Maiden' />
+
+              <strong className='font-semibold'>Daily Mix 1</strong>
+
+              <span className='text-sm text-zinc-400'>Wallows, COIN, girl in red and more</span>
+
+            </a>
+
+            <a href='#' className='bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10'>
+
+              <Image src="/fearofthedark.jpg" className='w-full' width={104} height={104} alt='Capa do Album Fear Of The Dark da Banda Iron Maiden' />
+
+              <strong className='font-semibold'>Daily Mix 1</strong>
+
+              <span className='text-sm text-zinc-400'>Wallows, COIN, girl in red and more</span>
+
+            </a>
+
+          </div>
+
         </main>
       </div>
-      <footer className="bg-zinc-800 border-t border-zinc-700 p-6">
-        footer
+      <footer className="bg-zinc-800 border-t border-zinc-700 p-6 flex items-center justify-between">
+        <div className='flex items-center gap-2'>
+          <Image src="/askingalexandria.jpg" width={56} height={56} alt='Capa do Album Asking Alexandria da Banda Asking Alexandria' />
+          <div className='flex flex-col'>
+            <strong className='font-normal'>Alone in A Room</strong>
+            <span className='text-xs text-zinc-400'>Asking Alexandria</span>
+          </div>
+        </div>
+        <div className='flex flex-col items-center'>
+          <div className='flex items-center gap-6'>
+            <Shuffle size={20} className='text-zinc-200' />
+            <SkipBack size={20} className='text-zinc-200' />
+
+            <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-white text-black'>
+              <Play />
+            </button>
+
+            <SkipForward size={20} className='text-zinc-200' />
+            <Repeat size={20} className='text-zinc-200' />
+
+          </div>
+
+        </div>
+        <div>
+
+        </div>
       </footer>
     </div>
   )
