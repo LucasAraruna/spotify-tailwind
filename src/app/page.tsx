@@ -1,49 +1,13 @@
-import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat } from 'lucide-react'
+import { Footer } from '@/components/Footer'
+import { Sidebar } from '@/components/Sidebar'
+import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, Mic2, LayoutList, Laptop2, Volume, Maximize, Maximize2 } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <div className="h-screen flex flex-col">
       <div className="flex flex-1">
-        <aside className="w-72 bg-zinc-950 p-6">
-          <div className='flex items-center gap-2'>
-            <div className='w-3 h-3 bg-red-500 rounded-full' />
-            <div className='w-3 h-3 bg-yellow-500 rounded-full' />
-            <div className='w-3 h-3 bg-green-500 rounded-full' />
-          </div>
-          <nav className='space-y-5 mt-10'>
-            <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-200'>
-              <HomeIcon />
-              Home
-            </a>
-            <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-200'>
-              <Search />
-              Search
-            </a>
-
-            <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-200'>
-              <Library />
-              Your Library
-            </a>
-
-            <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-200'>
-
-            </a>
-          </nav>
-
-          <nav className='mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3'>
-            <a href='' className='text-sm text-zinc-400 hover:text-zinc-100'>Linkin Park - Hybrid Theory</a>
-            <a href='' className='text-sm text-zinc-400 hover:text-zinc-100'>Linkin Park - Meteora</a>
-            <a href='' className='text-sm text-zinc-400 hover:text-zinc-100'>Metal Rock e afins</a>
-            <a href='' className='text-sm text-zinc-400 hover:text-zinc-100'>Eletrohits</a>
-            <a href='' className='text-sm text-zinc-400 hover:text-zinc-100'>Pegando Pesado</a>
-            <a href='' className='text-sm text-zinc-400 hover:text-zinc-100'>Nu Metal Era</a>
-            <a href='' className='text-sm text-zinc-400 hover:text-zinc-100'>All New Metal</a>
-            <a href='' className='text-sm text-zinc-400 hover:text-zinc-100'>Heavy Metal</a>
-            <a href='' className='text-sm text-zinc-400 hover:text-zinc-100'>Hip Hop Club Bangers</a>
-
-          </nav>
-        </aside>
+        <Sidebar />
         <main className="flex-1 p-6">
           <div className='flex items-center gap-4'>
             <button className=' rounded-full bg-black/40 p-1'>
@@ -168,33 +132,7 @@ export default function Home() {
 
         </main>
       </div>
-      <footer className="bg-zinc-800 border-t border-zinc-700 p-6 flex items-center justify-between">
-        <div className='flex items-center gap-2'>
-          <Image src="/askingalexandria.jpg" width={56} height={56} alt='Capa do Album Asking Alexandria da Banda Asking Alexandria' />
-          <div className='flex flex-col'>
-            <strong className='font-normal'>Alone in A Room</strong>
-            <span className='text-xs text-zinc-400'>Asking Alexandria</span>
-          </div>
-        </div>
-        <div className='flex flex-col items-center'>
-          <div className='flex items-center gap-6'>
-            <Shuffle size={20} className='text-zinc-200' />
-            <SkipBack size={20} className='text-zinc-200' />
-
-            <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-white text-black'>
-              <Play />
-            </button>
-
-            <SkipForward size={20} className='text-zinc-200' />
-            <Repeat size={20} className='text-zinc-200' />
-
-          </div>
-
-        </div>
-        <div>
-
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
